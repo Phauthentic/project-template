@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "8e18b8e1b0b765c6f5fefbb45c959ee7",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "instituteweb/composer-scripts",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/InstituteWeb/composer-scripts.git",
+                "reference": "5907516e0d6aba5f2b78cafd4af3cb352b44e9ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/InstituteWeb/composer-scripts/get/5907516e0d6aba5f2b78cafd4af3cb352b44e9ab.zip",
+                "reference": "5907516e0d6aba5f2b78cafd4af3cb352b44e9ab",
+                "shasum": ""
+            },
+            "require-dev": {
+                "composer/composer": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "InstituteWeb\\ComposerScripts\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Armin Vieweg",
+                    "email": "armin@v.ieweg.de"
+                }
+            ],
+            "description": "Fixes slashe issues on Windows when executing composer scripts (like 'bin/example').",
+            "homepage": "https://bitbucket.org/InstituteWeb/composer-scripts",
+            "time": "2017-02-21T15:09:52+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
