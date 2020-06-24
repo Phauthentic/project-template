@@ -1,6 +1,4 @@
 <?php
-if (!defined('DS')) {
-    define('DS', DIRECTORY_SEPARATOR);
-}
+$ds = DIRECTORY_SEPARATOR;
 
-include __DIR__ . DS . '..' . DS . 'vendor' . DS . 'autoload.php';
+include __DIR__ . $ds . '..' . $ds . 'vendor' . $ds . 'autoload.php';

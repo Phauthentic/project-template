@@ -4,7 +4,7 @@ Project Description here.
 
 ## Documentation
 
-Please see the [./docs](/docs/index.md) folder in this repository for documentation.
+Please see the [/docs](/docs/index.md) folder in this repository for the documentation.
 
 ## License
 

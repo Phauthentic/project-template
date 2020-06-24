@@ -24,9 +24,17 @@
         "post-install-cmd": [
             "php config/composer_post_install.php"
         ],
-        "tests": [
+        "test": [
             "\\InstituteWeb\\ComposerScripts\\ImprovedScriptExecution::apply",
             "./bin/phpunit"
+        ],
+        "test-coverage": [
+            "\\InstituteWeb\\ComposerScripts\\ImprovedScriptExecution::apply",
+            "./bin/phpunit --coverage-text"
+        ],
+        "test-coverage-html": [
+            "\\InstituteWeb\\ComposerScripts\\ImprovedScriptExecution::apply",
+            "./bin/phpunit --coverage-html ./tmp/coverage"
         ],
         "cscheck": [
             "\\InstituteWeb\\ComposerScripts\\ImprovedScriptExecution::apply",
