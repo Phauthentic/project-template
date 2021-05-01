@@ -24,6 +24,9 @@
         "post-install-cmd": [
             "php config/composer_post_install.php"
         ],
+        "post-update-cmd": [
+            "php config/composer_post_install.php"
+        ],
         "test": [
             "\\InstituteWeb\\ComposerScripts\\ImprovedScriptExecution::apply",
             "./bin/phpunit"
@@ -38,15 +41,15 @@
         ],
         "cscheck": [
             "\\InstituteWeb\\ComposerScripts\\ImprovedScriptExecution::apply",
-            "./bin/phpcs ./src ./tests --standard=./phpcs.xml -s"
+            "./bin/phpcs --standard=./phpcs.xml -s"
         ],
         "csfix": [
             "\\InstituteWeb\\ComposerScripts\\ImprovedScriptExecution::apply",
-            "./bin/phpcbf ./src ./tests --standard=./phpcs.xml"
+            "./bin/phpcbf --standard=./phpcs.xml"
         ],
         "analyze": [
             "\\InstituteWeb\\ComposerScripts\\ImprovedScriptExecution::apply",
-            "./bin/phpstan analyse -l 5 -c phpstan.neon ./src\\"
+            "./bin/phpstan analyse"
         ],
         "phive": [
             "php ./config/composer_phive.php"

@@ -26,23 +26,17 @@ build_failure_conditions:
 
 build:
     services:
-      #mariadb: 10.1.40
     environment:
-        hosts:
-            cake3.world-architects.com: '127.0.0.1'
-        redis: true
-        node: 10.16.0
         php:
             version: '7.4'
             ini:
                 phar.readonly: 'Off'
-        #elasticsearch: '6'
 
     nodes:
-        tests-php73:
+        tests-php74:
             environment:
                 php:
-                    version: '7.3'
+                    version: '7.4'
                     ini:
                         phar.readonly: 'Off'
             tests:
@@ -54,10 +48,10 @@ build:
                         file: 'coverage.xml'
                         format: 'php-clover'
 
-        tests-php74:
+        tests-php8:
             environment:
                 php:
-                    version: '7.4'
+                    version: '8.0'
                     ini:
                         phar.readonly: 'Off'
             tests:
@@ -74,4 +68,3 @@ build:
                 override:
                 - php-scrutinizer-run --enable-security-analysis
                 - phpcs-run --standard=./phpcs.xml ./src
-                - phpcs-run --standard=./phpcs.xml ./plugins
